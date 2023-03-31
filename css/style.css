@@ -6,94 +6,342 @@
 body{
   font-family: 'Poppins', sans-serif;
 }
-
+a{text-decoration: none;}
 section{
+  /* height:500px; */
   background: #fff;
-  height:500px;
-
+  /* border:solid #000 1px; */
+  font-size: 30px;
 }
-
 .logo{
-  margin: .5rem;
+  margin: 20px;
 }
-
 .hero{
-  height:100vh;
-  background: #1c1d25;
-  color:#fff;
-  font-size: 35px;
+   background: #1c1d25;
+   height:100vh;
+   color:#fff
 }
-.logo{
+/* nav */
+nav{
+  display: flex;
 }
 nav{
   display: flex;
   justify-content: space-between;
 }
 nav ul{
-  display: flex; 
-  margin: 10px;
-  margin-top: 20px;
-  justify-content: space-around;
-  width:300px;
-  font-size: 16px;
+  display: flex;
   list-style: none;
-
-}
-@media(min-width:768px){
-  nav ul{font-size: 25px;}
-  .dev{
-    margin-left: 50px;
-  }
-  .dev h1{
-    font-weight: 600 !important;
-    font-size: 60px !important;
-  }
-  nav ul{
-   
-    width:500px;
-    }
 }
 nav ul li{
-  text-decoration: none;
-
+  margin: 20px;
 }
-.dev-area{
+li{text-decoration: none;}
+
+
+/* developer info */
+.dev-centered{
   display: flex;
-  /* flex-direction: column; */
-  align-items:center;
-  height:100%;
   justify-content: space-between;
+  align-items: center;
+  height:100%;
 }
 .dev{
-  margin-top: 20vh;
   margin-left: 50px;
-  padding-bottom: 100px;
+  margin-bottom: 100px;
 }
-
-
+.dev h1{
+  font-weight: 600;
+  font-size: 90px;
+}
+.form-control{
+  width:200px;
+  display: inline-block;
+}
 .dev p{
-  font-weight:lighter;
+  font-weight: 500;
   font-size: 30px;
 }
+.dev button{
+  background: coral;
+  width: 200px;
+  height:50px
+}
+.dev button:hover{
+  background:#ef744b;
+}
+.dev button:active{background:#A9A9A9;color:rgb(29, 27, 27)}
 
 .socials{
-  padding-bottom: 100px;
-
+  padding-bottom: 130px;
+  margin: 20px;
 }
 
+.fa-twitter{
+  color:#1DA1F2
 
-.button{
-  width:200px;
-  font-size: 22px;
+}
+.fa-linkedin{
+  color:#0A66C2
+
+}
+.fa-github{
+  color:#fff
+
+}
+.fa-twitter:hover,
+.fa-linkedin:hover,
+.fa-github:hover
+{
+  opacity: .8;
+}
+
+/* sub section */
+.sub-section{
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto !important;
+  padding:80px
+}
+.sub-section-projects{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
-  height:55px;
-  background: coral;
+  padding:80px
+}
+.sub-section h2{
+  font-size:50px;
+  font-weight: 600;
 }
 
-.button:hover{background:#ef744b;}
-.button:active{background:#A9A9A9;color:rgb(29, 27, 27)}
+.headshot-contain{
+  display:flex;
+  align-items: center;
+}
+.headshot{
+  width:220px;
+
+}
+
+
+
+/* projects */ 
+.project-card{
+  width:300px;
+  height:500px;
+  box-shadow:5px 5px 20px rgb(197, 195, 195);
+  margin:10px auto 5px;
+}
+h2.project-head{
+  font-weight: 600;
+}
+.projects-contain{
+  display: flex;
+  justify-content:space-around;
+  margin: auto;
+
+}
+
+.sub-section-text{
+  font-size:15px ;
+  font-weight: 300;
+  min-height:100px
+}
+
+.carousel-item img{
+  width: 290px;
+  height: 280px;
+  margin: auto !important;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+/* carousel images */
+.project-image{
+  width:250px ;
+  padding: 15px;
+  border-radius: 50%;
+
+}
+.position-link,
+hr{
+  position: relative;
+  bottom: 30px;
+}
+hr{margin-left: 20px;margin-right: 20px;}
 
 footer{
-  height: 500px;
-  background: #000;
+  /* height:500px; */
+  background: blanchedalmond;
 }
+
+/* contact form */
+footer input::placeholder {
+  float: right;
+  font-style: italic;
+  font-weight: bold;
+}
+footer textarea{
+  border:0;
+  border-radius: .3rem;
+
+}
+footer textarea::placeholder {
+  padding: 5px;
+  font-weight:400;
+  font-style: italic;
+}
+footer a{
+  font-family: 'Times New Roman', Times, serif !important;
+  font-size: 18px !important;
+
+}
+
+@media(min-width:1024px){
+  .projects-contain{
+    display: flex;
+    justify-content:space-around;
+    margin: auto;
+  
+  }
+  .logo{
+    font-size: auto;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+ 
+  .dev h1 {
+    font-weight: 600;
+    font-size: 80px !important;
+}
+}
+
+@media(max-width:768px){
+  .logo{
+    font-size: 22px;
+  }
+  section{
+    font-size: 15px;
+  }
+  .headshot{
+    width:200px;
+  
+  }
+  .project-card {
+    width: 260px;
+    height: 300px;
+    box-shadow: 5px 5px 20px rgb(197, 195, 195);
+    margin: 10px auto ;
+}
+  .dev{
+    margin-left: 20px;
+  }
+  .dev h1{
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .dev p{
+    font-weight: 500;
+    font-size: 22px;
+  }
+  .dev button{
+    background: coral;
+    width: 150px;
+    font-size: 18px !important;
+    height:40px
+  }
+  .carousel-item img,
+  .height_width{
+    width: 120px;
+    height: 120px;
+  }
+  .sub-section-projects {
+    display: block;
+ 
+}
+hr,.position-link {
+ position: relative;
+ bottom: 50px;
+}
+  .sub-section-text{text-align: center;margin: auto 4px;font-size: 13.5px;}
+  .projects-contain{
+    margin: auto !important;
+ 
+    
+  }
+}
+@media(max-width:500px){
+ 
+  nav ul{
+    display: flex;
+    align-items: center;  }
+  .logo{
+    margin: 10px;
+  }
+  nav ul li{
+    margin: 10px;
+  }
+  .headshot{
+    width:180px;
+  
+  }
+  .sub-section{
+    display: flex;
+    justify-content: space-around;
+    padding:60px;
+  }
+
+  .projects-contain{
+    display: block  
+  }
+  .row{width: 100vw;margin: auto;}
+  .sub-section-projects{
+    padding:0
+  }
+  .carousel-item img,
+  .height_width{
+    width: 100px !important;
+    height: 100px !important;
+    margin: auto !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+    margin-top: 14px !important;
+  }
+  .project-card{
+    border:0;
+    width:300px;
+    height:300px;
+    box-shadow:5px 5px 20px rgb(197, 195, 195);
+    margin:10px auto 5px;
+  }
+
+  .form-control{
+    width:250px;
+    margin: 5px;
+    display: inline-block;
+  }
+  #subject{
+    margin-left: 40px !important;
+  }
+ 
+}
+
+ @media(min-width:768px){
+  .logo{
+    font-size: 24px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+ 
+  .dev h1 {
+    font-weight: 600;
+    font-size: 40px;
+}
+} 
+
+
+
