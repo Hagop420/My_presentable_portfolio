@@ -173,7 +173,6 @@ hr{
 hr{margin-left: 20px;margin-right: 20px;}
 
 footer{
-  /* height:500px; */
   background: blanchedalmond;
 }
 
@@ -189,14 +188,39 @@ footer textarea{
 
 }
 footer textarea::placeholder {
-  padding: 5px;
   font-weight:400;
   font-style: italic;
+}
+footer textarea{
+  padding:5px
 }
 footer a{
   font-family: 'Times New Roman', Times, serif !important;
   font-size: 18px !important;
 
+}
+footer .email,
+footer .mobile{
+  padding: 3px;
+  margin-bottom: 10px;
+  border-radius: .4rem;
+ 
+  margin-bottom: 20px;
+  
+}
+
+footer .email a:hover,
+footer .mobile a:hover{
+  opacity: .8;
+  transition: opacity .5s ease-in-out, background .5s ease-in-out;
+}
+footer .email a,
+footer .mobile a{
+  color: #000;
+  background:lavender;
+  padding: 10px;
+  font-weight: 700;
+  font-style: italic;
 }
 
 @media(min-width:1024px){

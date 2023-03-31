@@ -233,7 +233,7 @@
    <footer id="contact">
       <h2 class="text-center fs-1 p-4 fw-semibold">Contact Me</h2>
       <div class="row g-0 text-center">
-         <div class="col-11 m-auto col-md-8">
+         <div class="col-9 m-auto col-md-8">
             <form action="">
                <div class="form-group">
                   <label for="firstName">
@@ -255,30 +255,38 @@
                   <h3 class="fw-semibold font-monospace">Send Message</h3>
                </label>
                <textarea class="d-block m-auto" name="message" id="message" cols="50" rows="6"
-                  placeholder="Get in touch with me"></textarea>
-               <a target="_blank" class="btn btn-group bg-body-secondary rounded-pill m-3"
-                  href="mailto:jacka161swe@gmail.com?">
+                  placeholder="Get in touch with me.."></textarea>
+               <a target="_blank" class="btn btn-group bg-body-secondary rounded-pill m-3" onclick="sendEmail()">
                   Send Message
                </a>
-            </form>
-            <div class="">
-               <div>
-                  <a href="mailto:jacka161swe@gmail.com
-            ">
+
+
+               <div class="email m-auto mb-3">
+                  <a href="mailto:jacka161swe@gmail.com">
+
                      <i class="fa fa-envelope">
                         jacka161swe@gmail.com
                      </i>
-                     <a href="tel:18187311494
-                  ">
-                        <i class="fa a fa-phone" aria-hidden="true"></i></i>
-                        jacka161swe@gmail.com
-                        </i>
-                     </a>
 
-
+                  </a>
                </div>
-            </div>
+
          </div>
+
+         <div class="mobile mb-5">
+            <a href="tel:18187311494
+                        ">
+               <i class="fa a fa-phone" aria-hidden="true"></i></i>
+               +1(818)-731-1494
+               </i>
+            </a>
+         </div>
+         </form>
+
+
+
+
+      </div>
       </div>
    </footer>
 
@@ -312,6 +320,17 @@
    </script>
 
 
+   <script>
+      function sendEmail() {
+         var firstName = document.getElementById("firstName").value;
+         var lastName = document.getElementById("lastName").value;
+         var subject = document.getElementById("subject").value;
+         var message = document.getElementById("message").value;
+         var emailSubject = encodeURIComponent(subject);
+         var emailBody = firstName + " " + lastName + ",%0D%0A%0D%0A" + message;
+         window.open("mailto:jacka161swe@gmail.com?subject=" + emailSubject + "&body=" + emailBody);
+      }
+   </script>
 
 
 </body>
