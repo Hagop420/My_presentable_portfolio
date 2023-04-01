@@ -38,7 +38,7 @@ nav ul li{
 }
 li{text-decoration: none;}
 
-
+a{color:#fff}
 /* developer info */
 .dev-centered{
   display: flex;
@@ -173,23 +173,23 @@ hr{
 hr{margin-left: 20px;margin-right: 20px;}
 
 footer{
+  /* padding: 10px; */
+  min-height:350px;
   background: blanchedalmond;
 }
 
 /* contact form */
-footer input::placeholder {
-  float: right;
-  font-style: italic;
-  font-weight: bold;
-}
+
 footer textarea{
   border:0;
   border-radius: .3rem;
 
 }
-footer textarea::placeholder {
-  font-weight:400;
-  font-style: italic;
+
+
+footer input::placeholder {
+  float: right;
+font-style: italic;
 }
 footer textarea{
   padding:5px
@@ -199,6 +199,20 @@ footer a{
   font-size: 18px !important;
 
 }
+
+footer .btn{
+  margin: 5px;
+}
+footer .btn:hover{
+  opacity:.9;
+  color:rgb(75, 66, 66) ;
+  transition:color .5s ease-in-out, opacity .5s ease-in-out
+}
+
+
+footer input[type=email]{
+  margin-left: 57px;
+}
 footer .email,
 footer .mobile{
   padding: 3px;
@@ -207,6 +221,9 @@ footer .mobile{
  
   margin-bottom: 20px;
   
+}
+footer .d-flex{
+  align-items: center;
 }
 
 footer .email a:hover,
@@ -221,6 +238,9 @@ footer .mobile a{
   padding: 10px;
   font-weight: 700;
   font-style: italic;
+}
+.reset{
+  width:139.7px
 }
 
 @media(min-width:1024px){
@@ -256,7 +276,7 @@ footer .mobile a{
   }
   .project-card {
     width: 260px;
-    height: 300px;
+    height: 315px;
     box-shadow: 5px 5px 20px rgb(197, 195, 195);
     margin: 10px auto ;
 }
@@ -286,7 +306,8 @@ footer .mobile a{
     display: block;
  
 }
-hr,.position-link {
+hr,
+.posistion-link {
  position: relative;
  bottom: 50px;
 }
@@ -296,14 +317,17 @@ hr,.position-link {
  
     
   }
+  
+  
+  
 }
 @media(max-width:500px){
- 
+  
   nav ul{
     display: flex;
     align-items: center;  }
-  .logo{
-    margin: 10px;
+    .logo{
+      margin: 10px;
   }
   nav ul li{
     margin: 10px;
@@ -343,10 +367,11 @@ hr,.position-link {
   }
 
   .form-control{
-    width:250px;
+    /* width:50px; */
     margin: 5px;
     display: inline-block;
   }
+
   #subject{
     margin-left: 40px !important;
   }
@@ -355,17 +380,16 @@ hr,.position-link {
 
  @media(min-width:768px){
   .logo{
-    font-size: 24px;
+    font-size: 22px;
   }
   nav ul li a{
-    font-size: 20px;
+    font-size: 25px;
   }
  
   .dev h1 {
     font-weight: 600;
     font-size: 40px;
 }
+/*  */
 } 
-
-
 
