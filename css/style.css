@@ -11,7 +11,7 @@ section{
   /* height:500px; */
   background: #fff;
   /* border:solid #000 1px; */
-  font-size: 30px;
+  font-size: 25px;
 }
 .logo{
   margin: 20px;
@@ -20,6 +20,28 @@ section{
    background: #1c1d25;
    height:100vh;
    color:#fff
+}
+.fade-animation{
+  opacity: 0;
+  transition:1s all ease-in-out;
+  transform:translateY(5px) !important
+}
+.animation-x{
+  opacity: 0;
+  transition:1s all ease-in-out;
+  transform:translateX(-55px) !important
+}
+.animation-y{
+  opacity: 0;
+  transition:1s all ease-in-out;
+  transform:translateX(55px) !important
+}
+
+.show-text-item,
+.animation-x-visible,
+.animation-y-visible{
+  opacity:1;
+  transform:translateY(0) !important
 }
 /* nav */
 nav{
@@ -33,7 +55,8 @@ nav ul{
 }
 
 ul.show{
-  display: block !important;}
+  display: block !important;
+}
 nav ul li{
   margin: 20px;
 }
@@ -232,6 +255,7 @@ footer .btn{
     margin: auto;
   
   }
+  section{font-size: 30px;}
   .logo{
     font-size: auto;
   }
@@ -415,6 +439,7 @@ align-items: center;
     font-size: 30px;
     margin:10px;
     align-self: flex-end;
+   
   }
 ul{
   display: none !important;
@@ -424,6 +449,10 @@ nav{
   display: flex;
   flex-direction: column-reverse;
   background: #2b2c38;
+
+}
+ul.show{
+ 
 }
 .logo{
   display: none !important;
