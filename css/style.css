@@ -242,7 +242,10 @@ footer .btn{
   margin: 10px;
 }
 .tabletTA{
-  display: none;
+  display: none !important;
+}
+.phoneTA{
+  display: block !important;
 }
 
 
@@ -286,7 +289,7 @@ justify-content: flex-start;
   display: none;
 }
 .tabletTA{
-  display: block;
+  display: block !important;
 }
 footer .btn{
   padding:5px 45px;
