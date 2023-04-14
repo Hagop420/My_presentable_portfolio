@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+
+   <footer id="contact">
+      <h2 class="text-center pt-2 fw-semibold">
+         Get in touch
+      </h2>
+      <form action="https://formsubmit.co/jacka161swe@gmail.com
+      " target="_blank" method="POST">
+         <input type="hidden" name="_subject" value="New submission!">
+
+         <input type="hidden" name="_next" value="http://samplesite1.net/thanks.html">
+
+         <div class="m-auto text-center text-md-start m-md-2">
+            <legend>
+               <label for="firstName">Name</label>
+               <input type="text" name="name" id="firstName" class="form-control" placeholder="First Name.." required>
+            </legend>
+            <legend>
+               <label for="last name">Last Name</label>
+               <input type="last name" name="name" id="last name" class="form-control" placeholder="Last Name..">
+            </legend>
+            <legend>
+               <label for="email">Email</label>
+               <input type="email" name="email" id="email" class="form-control" placeholder="Email..">
+            </legend>
+            <label for="message" class="d-block">Message</label>
+            <!-- phone textarea -->
+            <textarea required name="message" id="message" cols="50" rows="10" placeholder="Send me an email.."
+               class="phoneTA"></textarea>
+            <!-- tablet textarea -->
+
+         </div>
+
+         <div class="d-md-flex d-lg-inline-flex m-lg-auto m-auto text-center">
+            <button type="submit" class="btn bg-success-subtle d-md-block m-auto">Submit</button>
+            <button type="reset" class="btn bg-danger-subtle">Refresh</button>
+         </div>
+
+
+
+      </form>
+   </footer>
+
+
+
+
+
+   <script>
+
+      document.addEventListener("DOMContentLoaded", () => {
+         const carousels = document.querySelectorAll(".carousel");
+         const pausePlayButtons = document.querySelectorAll("#Portfolio_carousel_pause_play_function");
+
+         for (let i = 0; i < carousels.length; i++) {
+            const carousel = carousels[i];
+
+
+            // initialize the carousel
+            const carouselInstance = new bootstrap.Carousel(carousel, {
+               interval: 4800,
+               pause: "false"
+            });
+         }
+      })
+
+   </script>
+
+
+
+
+
+</body>
+
+</html>
+</body>
+
+</html>
