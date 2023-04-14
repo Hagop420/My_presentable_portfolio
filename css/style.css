@@ -286,7 +286,7 @@ justify-content: flex-start;
   display:flex;
 }
 .phoneTA{
-  display: none;
+  display: none !important;
 }
 .tabletTA{
   display: block !important;
