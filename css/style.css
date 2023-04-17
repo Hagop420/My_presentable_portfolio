@@ -242,60 +242,17 @@ footer .btn{
   margin: 10px;
 }
 .tabletTA{
-  display: none;
-}
-.phoneTA{
-  display: block;
-}
-
-
-
-
-@media(min-width:1024px){
-  .projects-contain{
-    display: flex;
-    justify-content:space-around;
-    margin: auto;
-  
-  }
-  section{font-size: 30px;}
-  .logo{
-    font-size: auto;
-  }
-  nav ul li a{
-    font-size: 20px;
-  }
- 
-  .dev h1 {
-    font-weight: 600;
-    font-size: 80px !important;
-}
-footer form{
-  margin:10px
-}
-footer form input{
-  margin:10px
-}
-footer form{
-display:inline-block !important;
-justify-content: flex-start;
-}
-.form-control{
-  width:500px;
-  max-width:720px;
-  display:flex;
-}
-.phoneTA{
   display: none !important;
 }
-.tabletTA{
+.phoneTA{
   display: block;
 }
-footer .btn{
-  padding:5px 45px;
-  margin: 10px;
-}
-}
+
+
+
+
+
+
 
 @media(max-width:768px){
   .logo{
@@ -432,6 +389,7 @@ justify-content: center;
 align-items: center;
 }
 
+
 } 
 @media only screen and (max-width:1000px){
   .hamburger{
@@ -462,3 +420,48 @@ ul.show{
 }
 }
 
+@media(min-width:1024px){
+  .projects-contain{
+    display: flex;
+    justify-content:space-around;
+    margin: auto;
+  
+  }
+  section{font-size: 30px;}
+  .logo{
+    font-size: auto;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+ 
+  .dev h1 {
+    font-weight: 600;
+    font-size: 80px !important;
+}
+footer form{
+  margin:10px
+}
+footer form input{
+  margin:10px
+}
+footer form{
+display:inline-block !important;
+justify-content: flex-start;
+}
+.form-control{
+  width:500px;
+  max-width:720px;
+  display:flex;
+}
+.phoneTA{
+  display: none !important;
+}
+.tabletTA{
+  display: inline !important;
+}
+footer .btn{
+  padding:5px 45px;
+  margin: 10px;
+}
+}
