@@ -64,3 +64,14 @@ const toggleBtn = () => {
 icon.addEventListener('click', toggleBtn)
 
 
+var pricePerSoda = 1;
+var numberOfSodas = 2;
+var pricePerTaco;
+var numberOfTacos;
+
+var Subtotal = (numberOfSodas * pricePerSoda) + (numberOfTacos* pricePerTaco)
+var total = Subtotal * 1.10
+
+
+
+console.log(total);

@@ -176,6 +176,10 @@ h2.project-head{
   margin: auto;
 
 }
+.edge1{
+  width:120px !important;
+  object-fit: cover;
+}
 
 .sub-section-text{
   font-size:15px ;
@@ -388,6 +392,9 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 }
+footer label{
+  margin-right: 15px;
+}
 
 
 } 
@@ -454,12 +461,9 @@ justify-content: flex-start;
   max-width:720px;
   display:flex;
 }
-/* .phoneTA{
-  display: none !important;
+footer textarea {
+  width: 100% !important;
 }
-.tabletTA{
-  display: inline !important;
-} */
 footer .btn{
   padding:5px 45px;
   margin: 10px;
