@@ -6,6 +6,15 @@
 body{
   font-family: 'Poppins', sans-serif;
 }
+
+.contain {
+  /* position: absolute; */
+  top: 0;
+  overflow-x: hidden;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 a{text-decoration: none;}
 section{
   /* height:500px; */
@@ -19,13 +28,15 @@ section{
 .hero{
    background: #1c1d25;
    height:100vh;
-   color:#fff
+   color:#fff;
+   /* width: 101.6vw; */
 }
 .fade-animation{
   opacity: 0;
   transition:1s all ease-in-out;
   transform:translateY(5px) !important
 }
+
 .animation-x{
   opacity: 0;
   transition:1s all ease-in-out;
@@ -158,6 +169,53 @@ a{color:#fff}
 
 }
 
+.accordion a{
+  color:rgb(63, 110, 168);
+  font-weight: 700;
+  font-style: italic;
+}
+.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed{
+  background-color: #87e5dd;
+  color:rgb(0, 0, 0);
+  font-weight: 600;
+  border-radius: .2rem;
+}
+.accordion-body{
+  background-color: rgb(236, 234, 234);
+}
+.link-wrapper {
+  position: relative;
+  display: block;
+}
+.accordion a:hover{
+  opacity: .9;
+  color:#000;
+  transition: color .3s ease-in-out;
+}
+.accordion a::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -2.3px;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  transform: scaleX(0);
+  background-color: slateblue;
+  transition: transform 0.3s;
+}
+.wrapper-16 a::after{
+  background-color: transparent
+}
+
+.accordion a:hover::after{
+  transform: scaleX(1); 
+}
+.accordion-title {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px;
+  font-weight: bold;
+}
 
 
 /* projects */ 
@@ -203,6 +261,23 @@ h2.project-head{
   border-radius: 50%;
 
 }
+.list-img{
+  height:400px;
+  margin:20px
+}
+.nucamp-link:hover{transition:opacity .5s ease-in-out;
+  opacity: .9;}
+.nucamp-description:first-letter{
+  font-size: 200%;
+  color: #8A2BE2;
+}
+.nav-tabs .nav-link{
+  color:#6e1319
+}
+.list-img:hover{
+  transform:scale(1.1);
+  transition:1s all ease-in-out
+}
 .position-link,
 hr{
   position: relative;
@@ -212,7 +287,8 @@ hr{margin-left: 20px;margin-right: 20px;}
 
 footer{
   min-height:50vh;
-  background:rgb(177, 177, 233)
+  background:rgb(177, 177, 233);
+  /* width: 101.6vw; */
 }
 
 footer input{
@@ -257,7 +333,15 @@ footer .btn{
 
 
 
-
+@media (min-width: 992px){
+.accordion_two {
+  margin-top: 15.5vh;
+}
+.accordion-title{
+  font-weight: normal;
+  font-style: italic;
+}
+}
 @media(max-width:768px){
   .logo{
     font-size: 22px;
@@ -469,3 +553,74 @@ footer .btn{
   margin: 10px;
 }
 }
+
+
+
+
+
+
+
+
+.wrapper-16:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left:-2px;
+  width: 3px;
+  height: 100%;
+  background-color: #ffcc00;
+  transform: scaleY(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s;
+}
+.wrapper-16:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background-color: #ffcc00;
+  transform: scaleY(0);
+  transform-origin: top right;
+  transition: transform 0.3s;
+}
+.wrapper-16 .hover-16 {
+  padding: 4px;
+}
+.wrapper-16 .hover-16:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #ffcc00;
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s;
+}
+.wrapper-16 .hover-16:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #ffcc00;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s;
+}
+.inner-wrapper {
+  position: relative !important;
+  display: inline-block !important;
+}
+.wrapper-16:hover:before,
+.wrapper-16:hover:after {
+  transform: scaleY(1);
+}
+.wrapper-16:hover .hover-16:before,
+.wrapper-16:hover .hover-16:after {
+  transform: scaleX(1);
+}
+
