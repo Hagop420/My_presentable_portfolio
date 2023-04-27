@@ -682,7 +682,7 @@ footer .btn{
  .switch-light .switch {
    background-color: #F8F8F8;
    border-radius: 50%;
-   top: 3px;
+   top: 4px;
    left: -11px;
    height: 15px;
    width: 15px;
@@ -718,7 +718,7 @@ footer .btn{
 
  .switch-light {
    margin-top: 20px;
-   right: 20px;
+   right: 32px;
  }
  .switch-light .toggle-light {
    left: 75%;
@@ -733,7 +733,7 @@ footer .btn{
   position: relative;
   font-size: .6rem;
 
-  bottom: 9px;
+  bottom: 18px;
  }
 
  .switch-light .fa-sun{
