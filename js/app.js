@@ -23,7 +23,7 @@ const fadingParagraph = document.querySelector('.animation-x');
 
    const quickFadeAnimationParagraph = () => {
       const fade = fadingParagraph.getBoundingClientRect().top;
-      const fadeHeight = window.innerHeight;
+      const fadeHeight = window.innerHeight / 1;
       if (fade < fadeHeight) {
          fadingParagraph.classList.add('animation-x-visible');
       }
@@ -38,7 +38,7 @@ const fadingParagraph = document.querySelector('.animation-x');
 
    const quickFadeAnimationImage = () => {
       const fade = fadingImage.getBoundingClientRect().top;
-      const fadeHeight = window.innerHeight;
+      const fadeHeight = window.innerHeight / 1;
       if (fade < fadeHeight) {
          fadingImage.classList.add('animation-y-visible');
       }
@@ -48,7 +48,6 @@ const fadingParagraph = document.querySelector('.animation-x');
 
 
 
-   
    
    
  
@@ -64,14 +63,44 @@ const toggleBtn = () => {
 icon.addEventListener('click', toggleBtn)
 
 
-var pricePerSoda = 1;
-var numberOfSodas = 2;
-var pricePerTaco;
-var numberOfTacos;
-
-var Subtotal = (numberOfSodas * pricePerSoda) + (numberOfTacos* pricePerTaco)
-var total = Subtotal * 1.10
 
 
+  
+const twitter_icon = document.querySelector('.twitter_animation');
+const linkedin_icon = document.querySelector('.linkedin_animation');
+const gitHub_icon = document.querySelector('.gitHub_animation');
 
-console.log(total);
+ 
+ 
+
+
+const twitterIconFadeAnimation = () => {
+   const fade = twitter_icon.getBoundingClientRect().top;
+   const fadeHeight = window.innerHeight;
+   if (fade < fadeHeight) {
+      twitter_icon.classList.add('twitter_animation_visible');
+   }
+};
+
+window.addEventListener('load', twitterIconFadeAnimation)
+
+const linkedinIconFadeAnimation = () => {
+   const fade = linkedin_icon.getBoundingClientRect().top;
+   const fadeHeight = window.innerHeight;
+   if (fade < fadeHeight) {
+      linkedin_icon.classList.add('linkedin_animation_visible');
+   }
+};
+
+window.addEventListener('load', linkedinIconFadeAnimation)
+
+
+const gitHubIconFadeAnimation = () => {
+   const fade = gitHub_icon.getBoundingClientRect().top;
+   const fadeHeight = window.innerHeight;
+   if (fade < fadeHeight) {
+      gitHub_icon.classList.add('gitHub_animation_visible');
+   }
+};
+
+window.addEventListener('load', gitHubIconFadeAnimation)

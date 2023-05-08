@@ -38,14 +38,23 @@
       <section class="hero">
          <nav>
             <div class="d-none logo d-md-inline">Hagop A.</div>
-            <div class="d-inline d-md-none logo">HA.</div>
             <ul id="nav-list">
-               <li><a href="#about">
-                     About Me
-                  </a>
+               <li>
+                  <span class="inner-wrapper wrapper-16 "><a class="link hover-16 p-3" href="#about">
+
+                        About Me
+
+                     </a>
+                  </span>
                </li>
-               <li><a href="#projects">
-                     Projects
+               <li><span class="inner-wrapper wrapper-16 "><a href="#projects">
+                        Projects
+                     </a>
+                  </span>
+               </li>
+               <li><a href="https://srv959.hstgr.io:7443/6af2338795acd389/files/public_html/portfolio/resume%20(1)%206.39.03%20PM.docx"
+                     target="_blank">
+                     CV
                   </a>
                </li>
                <li><a href="#contact">
@@ -70,47 +79,28 @@
             <div class="socials">
                <div>
                   <a target="_blank" href="https://twitter.com/JJ_codes123">
-                     <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                     <i class="fa fa-twitter fa-2x twitter_animation" aria-hidden="true"></i>
                   </a>
                </div>
                <div>
                   <a target="_blank" href="https://www.linkedin.com/in/hagop-almadjian-607342240/">
-                     <i class="fab fa-linkedin fa-2x"></i>
+                     <i class="fab fa-linkedin linkedin_animation fa-2x"></i>
                   </a>
                </div>
                <div>
-                  <a target="_blank" href="https://github.com/Hagop420">
-                     <i class="fab fa-github fa-2x"></i>
+                  <a target="_blank" id="github_animation" href="https://github.com/Hagop420">
+                     <i class="fab fa-github gitHub_animation fa-2x"></i>
                   </a>
                </div>
 
-               <div class="switch-light">
-                  <input type="checkbox" class="light-check" id="light-dark" tabindex="0">
-
-                  <label for="light-dark" class="toggle-light" title="Switch to Light Mode" tabindex="0">
-                     <div class="moon_move">
-                        <span aria-hidden="true" class="fas fa-moon"></span>
-                     </div>
-                     <span class="sr-only">Switch to dark mode</span>
-
-                     <div class="sun_move">
-                        <span aria-hidden="true" class="fas fa-sun"></span>
-
-                     </div>
-                     <span class="sr-only">Switch to light mode</span>
-
-                     <div aria-hidden="true" class="switch"></div>
-                  </label>
-
-               </div>
             </div>
          </div>
       </section>
       <section class="sub-section" id="about">
          <div class="information animation-x">
             <h2>About Me</h2>
-            <p>Hi im Hagop Almadjian. Im an upcoming Front end developer with 3 years of self taught
-               expirience.</p>
+            <p>Greetings, I am Hagop Almadjian, a proficient front-end developer with three years of self-taught
+               experience.</p>
          </div>
          <div class="headshot-contain animation-y">
             <img class="headshot rounded-pill m-1 p-md-1" src="../images/headshot.jpeg" alt="Bio_image">
@@ -483,8 +473,21 @@
 
          <footer id="contact">
             <h2 class="text-center pt-2 fw-semibold">
-               Get in touch
+               Contact Me
             </h2>
+            <div class="text-center m-auto mb-2 p-2">
+               <a class="fas fa-paper-plane bg-dark p-1" href="mailto:jacka161swe@gmail.com
+               " target="_blank">
+                  <span class="email_address">jacka161swe@gmail.com</span>
+               </a>
+               <a class="fas fa-phone-square bg-dark p-1" href="tel:18187311494
+               " target="_blank">
+                  <span class="phone_number">
+                     1(818)-731-1494
+                  </span>
+               </a>
+            </div>
+
             <form action="https://formsubmit.co/jacka161swe@gmail.com
       " target="_blank" method="POST">
                <input type="hidden" name="_subject" value="New submission!">
@@ -536,100 +539,9 @@
       <!-- <script src="../js/app.js"></script> -->
       <script src="https://kit.fontawesome.com/813177f008.js" crossorigin="anonymous"></script>
 
-      <script>
-
-         document.addEventListener("DOMContentLoaded", () => {
-            const carousels = document.querySelectorAll(".carousel");
-            const pausePlayButtons = document.querySelectorAll("#Portfolio_carousel_pause_play_function");
-
-            for (let i = 0; i < carousels.length; i++) {
-               const carousel = carousels[i];
 
 
-               // initialize the carousel
-               const carouselInstance = new bootstrap.Carousel(carousel, {
-                  interval: 4800,
-                  pause: "false"
-               });
-            }
-         })
-
-
-
-         // quick word fade animation
-         const fadingText = document.querySelector('.fade-animation');
-
-
-
-
-
-         const quickFadeAnimation = () => {
-            const fade = fadingText.getBoundingClientRect().top;
-            const fadeHeight = window.innerHeight;
-            if (fade < fadeHeight) {
-               fadingText.classList.add('show-text-item');
-            }
-         };
-
-         window.addEventListener('load', quickFadeAnimation)
-
-         const fadingParagraph = document.querySelector('.animation-x');
-
-
-
-
-
-         const quickFadeAnimationParagraph = () => {
-            const fade = fadingParagraph.getBoundingClientRect().top;
-            const fadeHeight = window.innerHeight;
-            if (fade < fadeHeight) {
-               fadingParagraph.classList.add('animation-x-visible');
-            }
-         };
-
-         window.addEventListener('scroll', quickFadeAnimationParagraph)
-
-
-
-         const fadingImage = document.querySelector('.animation-y');
-
-
-         const quickFadeAnimationImage = () => {
-            const fade = fadingImage.getBoundingClientRect().top;
-            const fadeHeight = window.innerHeight;
-            if (fade < fadeHeight) {
-               fadingImage.classList.add('animation-y-visible');
-            }
-         };
-
-         window.addEventListener('scroll', quickFadeAnimationImage)
-
-
-
-
-
-
-
-
-
-         const icon = document.getElementById('hamburger');
-         const navList = document.getElementById('nav-list');
-
-         const toggleBtn = () => {
-            navList.classList.toggle('show')
-         }
-
-         icon.addEventListener('click', toggleBtn)
-
-
-
-
-
-
-      </script>
-
-
-
+      <script src="../js/app.js"></script>
 
 
 </body>

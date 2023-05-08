@@ -48,10 +48,33 @@ section{
   transform:translateX(55px) !important
 }
 
+
+/* social media icons animation */
+.twitter_animation{
+  opacity: 0;
+  transform:translateY(5px) !important;
+  transition:1s .2s all ease-in-out;
+}
+.linkedin_animation{
+  opacity: 0;
+  transform:translateY(7px) !important;
+  transition:1s .5s all ease-in-out;
+}
+.gitHub_animation{
+  opacity: 0;
+  transform:translateY(9px) !important;
+  transition:1s .7s all ease-in-out;
+}
+
+
 .show-text-item,
 .animation-x-visible,
-.animation-y-visible{
-  opacity:1;
+.animation-y-visible,
+.twitter_animation_visible,
+.linkedin_animation_visible,
+.gitHub_animation_visible{
+  opacity:1 !important;
+  display: block !important;
   transform:translateY(0) !important
 }
 /* nav */
@@ -454,6 +477,10 @@ hr,
   #subject{
     margin-left: 40px !important;
   }
+  .fa-paper-plane,
+  .fa-phone-square{
+   font-size: 16px !important;
+  }
  
 }
 
@@ -503,9 +530,7 @@ nav{
   background: #2b2c38;
 
 }
-ul.show{
- 
-}
+
 .logo{
   display: none !important;
 }
@@ -758,3 +783,16 @@ footer .btn{
            transform: translateX(43px);
  }
 
+
+
+ /* footer details */
+ .fa-paper-plane,
+ .fa-phone-square{
+  color:hwb(0 11% 5%);
+  font-size: 20px;
+ }
+
+ .email_address,
+ .phone_number{
+  color:#fff
+ }
